@@ -1,0 +1,147 @@
+*{
+    padding:0;
+    margin:0;
+}
+html{
+  width:100%;
+  height:100%;
+} 
+body{
+  width:100%;
+  height:100%;
+  display:grid;
+  align-items:center;
+  justify-items:center;
+  background-color:white;
+} 
+
+.input{
+  margin-bottom:5vh;
+}
+
+.input span h1{
+  font-size:5vh;
+  font-weight:600;
+}
+
+input{
+  border-bottom:3px solid black;
+  border-top:0px;
+  border-left:0px;
+  border-right:0px;
+  background-color:white;
+  color:black;
+  font-size:5vh;
+  width:49.5vh;
+  margin:10px;
+} 
+.container{
+  width:100%;
+  height:100%;
+  background-color:white;
+  bottom:0;
+}
+
+.contain{
+  display:grid;
+  grid-template-columns: 100px;
+  grid-template-rows:100px;
+  background-color:white;
+  align-items:center;
+  align-content:center;
+  justify-items:center;
+  justify-content:center;
+  align-self:center;
+  width:100%;
+  height:100%;
+}
+
+.buttons div span{
+  border:3px solid black;
+  padding:10%;
+  margin:2%;
+  color:black;
+} 
+
+.buttons div span:hover{
+  background-color:black;
+  transition:background-color forwards 2s;
+  color:white;
+  transition:color 1s;
+} 
+
+
+span p{
+  font-size:1.5rem;
+  font-weight:600;
+  padding:1vh;
+}
+
+.buttons{
+  display:grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows:50px 50px;
+  text-align:center;
+}
+.numpad{
+  display:grid;
+  grid-template-columns: 10vh 10vh 10vh;
+  grid-template-rows:10vh 10vh 10vh;
+}
+.arithmetic{
+  display:grid;
+  grid-template-columns: 10vh 10vh;
+  grid-template-rows:10vh 10vh 15vh;
+} 
+
+#click{
+  text-align:center;
+  font-size:1.2rem;
+  font-weight: 600;
+  background-color:white;
+  padding:2%;
+} 
+
+@media screen and  (max-height:820px) and (max-width:380px){
+  .contain{
+    grid-template-columns: 1fr;
+    grid-template-rows:100px 1fr;
+  }
+  .input{
+    margin-bottom:0;
+  }
+  input{
+    width:40vh;
+  }
+  .buttons{
+    grid-template-columns: 1fr;
+    grid-template-rows:1fr 1fr;
+  }
+  .numpad{
+    display:grid;
+    grid-template-columns: 10vh 10vh 10vh;
+    grid-template-rows:10vh 10vh 10vh;
+  }
+  .arithmetic{
+    display:grid;
+    grid-template-columns: 10vh 10vh 10vh;
+    grid-template-rows:10vh 10vh 10vh;
+  } 
+}
+
+@media screen and (max-width:299px){
+  .contain{
+    grid-template-columns: 1fr;
+    grid-template-rows:100px 1fr;
+  }
+  .input{
+    margin-bottom:10px;
+  }
+  input{
+    width:40vh;
+  }
+  .buttons{
+    grid-template-columns: 1fr;
+    grid-template-rows:1fr 1fr;
+  }
+}
