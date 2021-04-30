@@ -50,7 +50,10 @@ let calculator = ()=>{
       }
       else{
         //append arithmetic operation
-        input.value += arith.children[0].innerHTML;
+        if(!(String(input.value).includes(arith.children[0].innerHTML))){
+
+         input.value += arith.children[0].innerHTML;
+       } 
       }
 
     });
